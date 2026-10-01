@@ -22,8 +22,8 @@ jobs:
 
       - name: Enviar notificación a ntfy.sh
         run: |
-          curl -H "Title: GitHub Actions - ITLA ✅" \
-               -H "Tags: white_check_mark,rocket,github,devops" \
+          curl -H "Title: GitHub Actions - ITLA" \
+               -H "Tags: white_check_mark,github,devops" \
                -d "¡Nuevo código subido con éxito a la rama main!
           
           👤 Autor: ${{ github.actor }}
