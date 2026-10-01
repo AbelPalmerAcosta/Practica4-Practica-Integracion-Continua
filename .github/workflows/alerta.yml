@@ -22,4 +22,10 @@ jobs:
 
       - name: Enviar notificación a ntfy.sh
         run: |
-          curl -d "¡Nuevo código en Python subido a la rama main con éxito!" ntfy.sh/devops-itla
+          curl -H "Title: GitHub Actions - ITLA ✅" \
+               -H "Tags: white_check_mark,rocket,github,devops" \
+               -d "¡Nuevo código subido con éxito a la rama main!
+          
+          👤 Autor: ${{ github.actor }}
+          💬 Commit: ${{ github.event.head_commit.message }}" \
+          ntfy.sh/devops-itla
