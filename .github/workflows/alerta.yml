@@ -1,0 +1,25 @@
+name: CI Alerta ntfy Python
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  notificar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Ejecutar script de Python
+        run: python main.py
+
+      - name: Enviar notificación a ntfy.sh
+        run: |
+          curl -d "¡Nuevo código en Python subido a la rama main con éxito!" ntfy.sh/devops-itla
