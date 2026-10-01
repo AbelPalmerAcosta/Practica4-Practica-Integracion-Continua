@@ -7,4 +7,4 @@ Repositorio configurado para automatizar una alerta mediante **GitHub Actions** 
 - **`.github/workflows/alerta.yml`**: Script de GitHub Actions que detecta el *push* en la rama `main` y envía una notificación automática a [ntfy.sh/devops-itla](https://ntfy.sh/devops-itla).
 
 ## 🔗 Enlace del Repositorio
-[URL de tu repositorio en GitHub](https://github.com/AbelPalmerAcosta/Practica4-Practica-Integracion-Continua)
+[URL del repositorio en GitHub](https://github.com/AbelPalmerAcosta/Practica4-Practica-Integracion-Continua)
